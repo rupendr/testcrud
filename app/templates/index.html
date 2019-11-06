@@ -1,0 +1,11 @@
+
+<form method="POST" action="{% url 'index' %}">
+        {% csrf_token %}
+
+<h1>Enter Details Here</h1>
+
+    {{form}}
+
+<button>submit</button>
+
+</form>

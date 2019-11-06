@@ -1,0 +1,15 @@
+
+
+    {% csrf_token %}
+
+<h1>view Details Here</h1>
+
+{% for i in data %}
+{{i.student}}
+{{i.number}}
+{{i.city}}<a href="{% url 'delete' pk=i.pk %}"> <button>del</button></a><a href="{% url 'update' pk=i.pk %}"> <button>update</button></a> <Br>
+{% endfor %}
+
+
+
+</form>

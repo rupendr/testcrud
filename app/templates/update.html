@@ -1,0 +1,11 @@
+
+<form method="POST" action="{% url 'update'  pk=data.pk %}">
+        {% csrf_token %}
+
+<h1>Update Details Here</h1>
+    {% csrf_token %}
+    {{form}}
+
+<button>submit</button>
+
+</form>
